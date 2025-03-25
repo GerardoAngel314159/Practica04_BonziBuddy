@@ -1,12 +1,12 @@
 /**
- * interfaz que representa a la fabrica para el patron abstract Factory
+ * Clase abstracta que representa a la fabrica para el patron abstract Factory
  */
-public interface AbstractFactory{
+public abstract class AbstractFactory{
 
     /**
      * Metodo que obtiene los componentes 
      * @param tipoComponente de tipo String
      * @return un componente de
      */
-    public Object getComponente(String tipoComponente);
+    abstract Object getComponente(String tipoComponente);
 }

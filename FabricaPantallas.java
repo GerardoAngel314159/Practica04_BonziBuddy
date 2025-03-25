@@ -1,22 +1,23 @@
 /**
  * Clase que representa a la fabrica de pantallas para crear diferentes tipos de camaras
  */
-public class FabricaPantallas implements AbstractFactory{
+public class FabricaPantallas extends  AbstractFactory{
     
     @Override
     public Object getComponente(String tipoComponente){
         return getPantalla(tipoComponente);
     }
 
-    public Camara getPantalla(String tipoPantalla){
+    
+    public Pantalla getPantalla(String tipoPantalla){
         if(tipoPantalla == null){
             return null;
         }else if(tipoPantalla.equalsIgnoreCase("6,1")){
-            return new CamaraDos();
+            return new PantallaTamanoUno();
         }else if(tipoPantalla.equalsIgnoreCase("6,5")){
-            return new CamaraTres();
+            return new PantallaTamanoDos();
         }else if(tipoPantalla.equalsIgnoreCase("6,8")){
-            return new CamaraCuatro();
+            return new PantallaTamanoTres();
         }
         return null;
     }

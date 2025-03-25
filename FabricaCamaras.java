@@ -1,7 +1,7 @@
 /**
  * Clase que representa a la fabrica de camaras para crear diferentes tipos de camaras
  */
-public class FabricaCamaras implements AbstractFactory{
+public class FabricaCamaras extends  AbstractFactory{
     
     @Override
     public Object getComponente(String tipoComponente){
