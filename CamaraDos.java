@@ -8,7 +8,7 @@ public class CamaraDos implements Camara{
     }
 
     @Override
-    piblic void getTipo(){
-        System.out.println("tipo");
+    public void getTipo(){
+        System.out.println(tipo);
     }
 }

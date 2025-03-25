@@ -9,6 +9,9 @@ public interface Camara{
      */
     public void crearCamara();
 
+    /**
+     * Obtiene el tipo de Camara que se creo
+     */
     public void getTipo();
 
 }
