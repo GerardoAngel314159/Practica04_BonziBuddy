@@ -1,7 +1,7 @@
 /**
  * Clase que representa a la fabrica de baterias para crear diferentes tipos de baterias
  */
-public class FabricaBaterias implements AbstractFactory{
+public class FabricaBaterias extends AbstractFactory{
     
     @Override
     public Object getComponente(String tipoComponente){
