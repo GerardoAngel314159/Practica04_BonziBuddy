@@ -3,7 +3,7 @@ public class PantallaTamanoTres implements Pantalla{
     String tipo = "";
 
     @Override
-    public void crearCamara (){
+    public void crearPantalla(){
         tipo = "6,8";
     }
 
