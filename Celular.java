@@ -28,4 +28,10 @@ public class Celular{
         this.camara = camara;
     }
 
+    public void muestraCelular(){
+        System.out.println("El celular construido es el siguiente: ");
+        pantalla.getTipo();
+        bateria.getTipo();
+        camara.getTipo();
+    }
 }

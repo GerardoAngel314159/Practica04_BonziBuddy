@@ -26,5 +26,13 @@ public class Tablet{
         this.camara = camara;
     }
 
-
+    /**
+     * Metodo que muestra la Tablet construida
+     */
+    public void muestraTablet(){
+        System.out.println("La Tablet construida es la siguiente: ");
+        pantalla.getTipo();
+        lapizTactil.getTipo();
+        camara.getTipo();
+    }
 }

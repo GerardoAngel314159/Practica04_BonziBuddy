@@ -27,8 +27,19 @@ public class Laptop{
      */
     public Laptop (Pantalla pantalla, Procesador procesador, MemoriaRAM memoriaRAM, Almacenamiento almacenamiento){
         this.pantalla = pantalla;
-        this.procesador = procesador;
-        this.memoriaRAM = memoriaRAM;
         this.almacenamiento = almacenamiento;
+        this.memoriaRAM = memoriaRAM;
+        this.procesador = procesador;
+    }
+
+    /**
+     * Metodo que muestra la Laptop construida
+     */
+    public void muestraLaptop(){
+        System.out.println("La Laptop construida es la siguiente: ");
+        pantalla.getTipo();
+        procesador.getTipo();
+        memoriaRAM.getTipo();
+        almacenamiento.getTipo();
     }
 }
