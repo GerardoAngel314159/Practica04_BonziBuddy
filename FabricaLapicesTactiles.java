@@ -11,9 +11,9 @@ public class FabricaLapicesTactiles extends  AbstractFactory{
     public LapizTactil getLapizTactil(String tipoLapizTactil){
         if(tipoLapizTactil == null){
             return null;
-        }else if(tipoLapizTactil.equalsIgnoreCase("dos")){
+        }else if(tipoLapizTactil.equalsIgnoreCase("activo")){
             return new LapizActivo();
-        }else if(tipoLapizTactil.equalsIgnoreCase("tres")){
+        }else if(tipoLapizTactil.equalsIgnoreCase("pasivo")){
             return new LapizPasivo();
         }
         return null;
