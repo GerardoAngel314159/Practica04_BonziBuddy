@@ -8,13 +8,13 @@ public class Celular{
      */
 
     /**Representa a la pantalla del celular */
-    private Pantalla pantalla;
+    private final Pantalla pantalla;
 
     /**Representa a la bateria del celular */
-    private Bateria bateria;
+    private final Bateria bateria;
 
     /**Representa a las camaras del celular */
-    private Camara camara;
+    private final Camara camara;
 
     /**
      * Metodo contructor de la clase
