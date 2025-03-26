@@ -10,8 +10,8 @@ public class LapizActivo implements LapizTactil{
     /**
      * Metodo que cambia el valor de tipo a Lapiz Activo
      */
-    public void crearLapiz(){
-        tipo= "Lapiz Activo"
+    public void crearLapizTactil(){
+        tipo= "Lapiz Activo";
     }
 
 

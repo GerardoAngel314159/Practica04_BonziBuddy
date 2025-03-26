@@ -1,7 +1,7 @@
 /**
- * Implementacion de la interfaz Procesador de Procesadori3.
+ * Implementacion de la interfaz Procesador de Procesadori7.
  */
-public class Procesadori3 implements Procesador {
+public class Procesadori7 implements Procesador {
 
     /**
      * Almacena el tipo de Procesador
@@ -9,11 +9,11 @@ public class Procesadori3 implements Procesador {
     private String tipo = "";
 
     /**
-     * Establece la capacidad de Procesador de Intel i3.
+     * Establece la capacidad de Procesador de Intel i7.
      */
     @Override
     public void crearProcesador() {
-        tipo = "Procesador i3";
+        tipo = "Procesador i7";
     }
 
     /**

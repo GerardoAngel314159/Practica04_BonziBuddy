@@ -29,6 +29,6 @@ public class Laptop{
         this.pantalla = pantalla;
         this.procesador = procesador;
         this.memoriaRAM = memoriaRAM;
-        this.almacenamiento = almacenamiento
+        this.almacenamiento = almacenamiento;
     }
 }

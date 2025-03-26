@@ -10,8 +10,9 @@ public class LapizPasivo implements LapizTactil{
     /**
      * Metodo que cambia el valor de tipo a Lapiz Pasivo
      */
-    public void crearLapiz(){
-        tipo= "Lapiz Activo"
+    @Override
+    public void crearLapizTactil(){
+        tipo= "Lapiz Pasivo";
     }
 
 
