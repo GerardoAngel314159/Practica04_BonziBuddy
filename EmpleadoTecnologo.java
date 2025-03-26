@@ -6,16 +6,18 @@ public class EmpleadoTecnologo {
      */
 
 	
-	public static AbstractFactory getFactory(String opcion){
+	public AbstractFactory getFactory(String opcion){
         String opcion2 = opcion.toLowerCase();
             return switch (opcion2) {
                 case "procesador" -> new FabricaProcesadores();
                 case "camara" -> new FabricaCamaras();
                 case "lapiz" -> new FabricaLapicesTactiles();
-                case "RAM" -> new FabricaRAM();
+                case "ram" -> new FabricaRAM();
                 case "almacenamiento" -> new FabricaAlmacenamiento();
                 case "bateria" -> new FabricaBaterias();
-                case "pantalla" -> new FabricaPantallas();
+                case "pantalla celular" -> new FabricaPantallas();
+                case "pantalla tablet" -> new FabricaPantallasTablets();
+                case "pantalla laptop" -> new FabricaPantallasLaptops();
                 default -> null;
             };
     }
