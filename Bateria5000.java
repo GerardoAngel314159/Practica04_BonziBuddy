@@ -6,7 +6,7 @@ public class Bateria5000 implements Bateria{
     /**
      * Almacena el tipo de bateria.
      */
-    String tipo = "";
+    private String tipo = "";
 
     /**
      * Establece la capacidad de la bateria a 5000 mAh.
