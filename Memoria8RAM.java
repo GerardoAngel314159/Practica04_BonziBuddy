@@ -6,7 +6,7 @@ public class Memoria8RAM implements MemoriaRAM {
     /**
      * Almacena el tipo de memoria RAM
      */
-    private String tipo = "";
+    private String tipo;
 
     /**
      * Establece la capacidad de memoria RAM de 8 gib.

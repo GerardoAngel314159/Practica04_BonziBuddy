@@ -7,25 +7,19 @@ public class Main {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.println("Bienvenido a la tienda de tecnologia Banana Store!! :D");
             System.out.println("A continuacion indique si desea un 1)Celular 2)Computadora o 3)Tablet");
-            int opcion = sc.nextInt();
-            
-            do{
-                switch (opcion) {
-                    case 1 -> crearCelular(empleado);
-                    case 2 -> crearLaptop(empleado);
-                    case 3 -> crearTablet(empleado);
-                    default -> System.out.println("\nOpcion no valida");
-                }
-                
-                System.out.println("\nDesea comprar algo mas? 1)Si 2)No");
-                opcion = sc.nextInt();
-                if (opcion == 2){
-                    break;
-                }
-                
-            } while (true);
-            
+            int opcion;
+
+            opcion = sc.nextInt();
+
+            switch (opcion) {
+                case 1 -> crearCelular(empleado);
+                case 2 -> crearLaptop(empleado);
+                case 3 -> crearTablet(empleado);
+                default -> System.out.println("\nOpcion no valida");
+            }
+
             System.out.println("Gracias por su compra!! :D");
+
         }
     }
 
@@ -39,7 +33,7 @@ public class Main {
         Pantalla pantalla;
         Bateria bateria;
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Indique el tamaño de pantalla que desea (in): 1) 6,1 2)6,5 3)6,8");
+            System.out.println("Indique el tamano de pantalla que desea (in): 1) 6,1 2)6,5 3)6,8");
             int tamano = sc.nextInt();
             switch (tamano){
                 case 1 -> pantalla = (Pantalla)pantallas.getComponente("6,1");
@@ -68,8 +62,12 @@ public class Main {
             }
         }
 
+        pantalla.crearPantalla();
+        bateria.crearBateria();
+        camara.crearCamara();
+
         Celular celular = new Celular(pantalla, bateria, camara);
-        System.out.println("Celular creado con exito!!");
+        System.out.println("\nCelular creado con exito!!\n");
         celular.muestraCelular();
     }
 
@@ -82,7 +80,7 @@ public class Main {
             LapizTactil lapiz;
             Camara camara;
             
-            System.out.println("Indique el tamaño de pantalla que desea (in): 1) 8 2) 9 3) 10");
+            System.out.println("Indique el tamano de pantalla que desea (in): 1) 8 2) 9 3) 10");
             int tamano = sc.nextInt();
             switch (tamano){
                 case 1 -> pantalla = (Pantalla)pantallas.getComponente("8");
@@ -108,8 +106,12 @@ public class Main {
                 default -> camara = (Camara)camaras.getComponente("dos");
             }
             
+            pantalla.crearPantalla();
+            lapiz.crearLapizTactil();
+            camara.crearCamara();
+
             Tablet tablet = new Tablet(pantalla, lapiz, camara);
-            System.out.println("Tablet creada con exito!!");
+            System.out.println("\nTablet creada con exito!!\n");
             tablet.muestraTablet();
         }
 
@@ -127,7 +129,7 @@ public class Main {
             MemoriaRAM ramLaptop;
             Almacenamiento almacenamientoLaptop;
             
-            System.out.println("Indique el tamaño de pantalla que desea (in): 1) 24 2) 25 3) 27");
+            System.out.println("Indique el tamano de pantalla que desea (in): 1) 24 2) 25 3) 27");
             int tamano = sc.nextInt();
             switch (tamano){
                 case 1 -> pantalla = (Pantalla)pantallas.getComponente("24");
@@ -162,9 +164,14 @@ public class Main {
                 case 3 -> almacenamientoLaptop = (Almacenamiento)almacenamiento.getComponente("1000 gib");
                 default -> almacenamientoLaptop = (Almacenamiento)almacenamiento.getComponente("250 gib");
             }
-            
+
+            pantalla.crearPantalla();
+            procesadorLaptop.crearProcesador();
+            ramLaptop.crearMemoriaRAM();
+            almacenamientoLaptop.crearAlmacenamiento();
+
             Laptop laptop = new Laptop(pantalla, procesadorLaptop, ramLaptop, almacenamientoLaptop);
-            System.out.println("Laptop creada con exito!!");
+            System.out.println("\nLaptop creada con exito!!\n");
             laptop.muestraLaptop();
         }
     }

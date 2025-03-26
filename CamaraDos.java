@@ -6,7 +6,7 @@ public class CamaraDos implements Camara {
     /**
      * Almacena el tipo de camara.
      */
-    private String tipo = "";
+    private String tipo;
 
     /**
      * Establece el tipo de camara como "Dos camaras".

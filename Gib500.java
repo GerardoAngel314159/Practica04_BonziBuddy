@@ -6,7 +6,7 @@ public class Gib500 implements Almacenamiento {
     /**
      * Almacena el tipo de Almacenamiento
      */
-    private String tipo = "";
+    private String tipo;
 
     /**
      * Establece la capacidad de Almacenamiento de 500 Gib

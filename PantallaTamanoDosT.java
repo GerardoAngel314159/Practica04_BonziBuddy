@@ -6,7 +6,7 @@ public class PantallaTamanoDosT implements Pantalla{
     /**
      * Almacena el tipo de pantalla en terminos de tamanio.
      */
-    String tipo = "";
+    String tipo;
 
     /**
      * Establece el tamanio de la pantalla a un valor predeterminado de 9 pulgadas.

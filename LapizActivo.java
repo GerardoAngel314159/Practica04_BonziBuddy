@@ -6,7 +6,7 @@ public class LapizActivo implements LapizTactil{
     /**
      * Almacena el tipo de LapizTactil en terminos de Activo o Activo.
      */
-    String tipo = "";
+    String tipo;
 
     /**
      * Establece el modo del LapizTactil a un valor predeterminado de Activo.

@@ -6,7 +6,7 @@ public class PantallaTamanoDos implements Pantalla {
     /**
      * Almacena el tipo de pantalla en terminos de tamanio.
      */
-    private String tipo = "";
+    private String tipo;
 
     /**
      * Establece el tamanio de la pantalla a un valor predeterminado de 6.5 pulgadas.

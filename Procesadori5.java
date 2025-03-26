@@ -6,7 +6,7 @@ public class Procesadori5 implements Procesador {
     /**
      * Almacena el tipo de Procesador
      */
-    private String tipo = "";
+    private String tipo;
 
     /**
      * Establece la capacidad de Procesador de Intel i5.
