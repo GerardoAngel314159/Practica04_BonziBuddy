@@ -1,5 +1,5 @@
 /**
- * Clase que representa a la fabrica de pantallas para crear diferentes tipos de camaras
+ * Clase que representa a la fabrica de pantallas para crear diferentes tipos de pantallas de Tablets
  */
 public class FabricaPantallasTablets extends  AbstractFactory{
     
