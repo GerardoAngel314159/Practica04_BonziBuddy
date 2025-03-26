@@ -1,26 +1,26 @@
 /**
- * Implementacion de la interfaz LapizTactil que representa una LapizTactil de tamanio fijo.
+ * Representa a la clase de Lapiz pasivo que usaran las tablets
+ * implementando la interfaz LapizTactil
  */
 public class LapizPasivo implements LapizTactil{
 
-    /**
-     * Almacena el tipo de LapizTactil en terminos de Activo o Pasivo.
-     */
-    String tipo = "";
+    /**Representa al tipo de lapiz tactil que es */
+    private String tipo;
 
     /**
-     * Establece el modo del LapizTactil a un valor predeterminado de Pasivo.
+     * Metodo que cambia el valor de tipo a Lapiz Pasivo
      */
     @Override
     public void crearLapizTactil(){
-        tipo = "Pasivo";
+        tipo= "Lapiz Pasivo";
     }
 
+
     /**
-     * Imprime el tamanio de la LapizTactil en la consola.
-     */
+    * Imprime el tipo de Lapiz
+    */
     @Override
-    public void getTipo(){
+    public void getTipo() {
         System.out.println(tipo);
     }
 }

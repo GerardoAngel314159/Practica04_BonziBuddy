@@ -1,26 +1,26 @@
 /**
- * Implementacion de la interfaz Almacenamiento que representa una Almacenamiento de tamanio fijo.
+ * Implementacion de la interfaz Almacenamiento de 1000 gib
  */
-public class Gib1000 implements Almacenamiento{
+public class Gib1000 implements Almacenamiento {
 
     /**
-     * Almacena el tipo de Almacenamiento en terminos de GB.
+     * Almacena el tipo de Almacenamiento
      */
-    String tipo = "";
+    private String tipo = "";
 
     /**
-     * Establece el tamanio de la Almacenamiento a un valor predeterminado de 1024 GB.
+     * Establece la capacidad de Almacenamiento de 1000 Gib
      */
     @Override
-    public void crearAlmacenamiento(){
-        tipo = "1024 GB";
+    public void crearAlmacenamiento() {
+        tipo = "1000 gib";
     }
 
     /**
-     * Imprime el tamanio de la Almacenamiento en la consola.
+     * Imprime la capacidad de Almacenamiento
      */
     @Override
-    public void getTipo(){
+    public void getTipo() {
         System.out.println(tipo);
     }
 }

@@ -8,15 +8,15 @@ public class FabricaBaterias extends AbstractFactory{
         return getCamara(tipoComponente);
     }
 
-    public Camara getCamara(String tipoCamara){
+    public Bateria getCamara(String tipoCamara){
         if(tipoCamara == null){
             return null;
         }else if(tipoCamara.equalsIgnoreCase("3500")){
-            return new CamaraDos();
+            return new Bateria3500();
         }else if(tipoCamara.equalsIgnoreCase("4500")){
-            return new CamaraTres();
+            return new Bateria4500();
         }else if(tipoCamara.equalsIgnoreCase("5000")){
-            return new CamaraCuatro();
+            return new Bateria5000();
         }
         return null;
     }

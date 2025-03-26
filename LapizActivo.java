@@ -13,7 +13,7 @@ public class LapizActivo implements LapizTactil{
      */
     @Override
     public void crearLapizTactil(){
-        tipo = "Activo";
+        tipo = "Lapiz Activo";
     }
 
     /**
